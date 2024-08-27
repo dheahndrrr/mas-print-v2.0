@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(135deg, #6f42c1, #d63384);
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 20px;
+}
+
+#navbar {
+    background-color: rgb(36, 54, 153);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+#navbar .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+#navbar .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    transition: background 500ms;
+}
+
+.hero {
+    background-color: linear-gradient(135deg, #6f42c1, #d63384);
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.slider-content {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.slider-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.slider-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(36, 54, 153); /* Warna latar belakang footer */
+    position: relative;
+}
+  
+.social-icons {
+    margin-top: 10px;
+}
+  
+.social-icon {
+    width: 30px; /* Ukuran ikon */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+  
+.social-icon:hover {
+    transform: scale(1.1); /* Efek zoom saat ikon di-hover */
+}
+
+/* Media query untuk memastikan tata letak tetap fleksibel */
+@media (max-width: 768px) {
+    .social-icon {
+      width: 25px; /* Ukuran ikon lebih kecil di layar yang lebih kecil */
+      margin: 0 5px;
+    }
+}
+
+.h1-footer {
+    color: white;
+    font-size: 40px;
+}

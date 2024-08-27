@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(135deg, #6f42c1, #d63384); /* Menggunakan gradasi untuk tampilan modern */
+    font-family: 'Nunito', sans-serif;
+}
+
+#navbar {
+    background-color: rgb(36, 54, 153);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+#navbar .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+#navbar .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    transition: background 500ms;
+}
+
+#title-head {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+#title-head h1 {
+    color: rgb(36, 54, 153);
+}
+
+.blurb h2 {
+    color: rgb(36, 54, 153);
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(36, 54, 153); /* Warna latar belakang footer */
+    position: relative;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px; /* Ukuran ikon */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Efek zoom saat ikon di-hover */
+}
+
+/* Media query untuk memastikan tata letak tetap fleksibel */
+@media (max-width: 768px) {
+    .social-icon {
+      width: 25px; /* Ukuran ikon lebih kecil di layar yang lebih kecil */
+      margin: 0 5px;
+    }
+}
+
+.h1-footer {
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 1200px) {
+    #title-head h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+/* Animasi masuk dari kanan */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animasi masuk dari kiri */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Aturan untuk elemen-elemen dengan animasi */
+.animated-left.animated-visible {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.animated-right.animated-visible {
+    animation: slideInRight 1s ease-in-out forwards;
+}
