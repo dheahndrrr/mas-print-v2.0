@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(135deg, #6f42c1, #d63384);
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 20px;
+}
+
+#navbar {
+    background-color: rgb(36, 54, 153);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+#navbar .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+#navbar .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    transition: background 500ms;
+}
+  
+.hero-section {
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+.hero-section .btn-primary {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+/* Style untuk price list */
+.price-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.price-list .btn-outline-primary {
+    border-color: #0069d9;
+    color: #0069d9;
+}
+
+.price-list .btn-outline-primary:hover {
+    background-color: #0069d9;
+    color: #fff;
+}
+
+/* Style tambahan untuk tombol dan konten */
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.section-content {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+}
+
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(36, 54, 153); /* Warna latar belakang footer */
+    position: relative;
+}
+  
+.social-icons {
+    margin-top: 10px;
+}
+  
+.social-icon {
+    width: 30px; /* Ukuran ikon */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+  
+.social-icon:hover {
+    transform: scale(1.1); /* Efek zoom saat ikon di-hover */
+}
+
+/* Media query untuk memastikan tata letak tetap fleksibel */
+@media (max-width: 768px) {
+    .social-icon {
+      width: 25px; /* Ukuran ikon lebih kecil di layar yang lebih kecil */
+      margin: 0 5px;
+    }
+}
+
+.h1-footer {
+    color: white;
+    font-size: 40px;
+}
